@@ -9,7 +9,7 @@ import (
 
 // PrintNumber returns a hard coded string.
 func PrintNumber() {
-	fmt.Println("15")
+	fmt.Println("16")
 	err := doUpdate("https://github.com/pmpeters-coder/hello.git/depend")
 	if err != nil {
 		fmt.Println(err)
