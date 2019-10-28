@@ -28,5 +28,7 @@ func doUpdate(url string) error {
 	if err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println(resp.Body)
+	fmt.Println()
 	return err
 }
