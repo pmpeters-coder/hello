@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"practice/go-update/depend"
 	"time"
 
 	"github.com/inconshreveable/go-update"
@@ -11,7 +12,7 @@ import (
 func main() {
 	for {
 		time.Sleep(2 * time.Second)
-		fmt.Println(2)
+		depend.PrintNumber()
 		doUpdate("https://github.com/pmpeters-coder/hello.git")
 
 	}
