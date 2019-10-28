@@ -18,7 +18,8 @@ func PrintNumber() {
 	*/
 }
 
-func doUpdate(url string) error {
+// DoUpdate should update the executable.
+func DoUpdate(url string) error {
 	resp, err := http.Get(url)
 	if err != nil {
 		return err
