@@ -12,7 +12,7 @@ import (
 func main() {
 	time.Sleep(2 * time.Second)
 	depend.PrintNumber()
-	doUpdate("https://github.com/pmpeters-coder/hello.git")
+	doUpdate("https://github.com/pmpeters-coder/hello.git:go-update")
 
 }
 
