@@ -12,8 +12,10 @@ import (
 func main() {
 	time.Sleep(2 * time.Second)
 	depend.PrintNumber()
-	doUpdate("https://github.com/pmpeters-coder/hello.git:go-update")
-
+	err := doUpdate("https://github.com/pmpeters-coder/hello.git")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func doUpdate(url string) error {
@@ -23,8 +25,6 @@ func doUpdate(url string) error {
 	}
 	defer resp.Body.Close()
 	err = update.Apply(resp.Body, update.Options{})
-	if err != nil {
-		fmt.Println(err)
-	}
+
 	return err
 }
