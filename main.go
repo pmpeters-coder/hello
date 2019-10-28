@@ -10,12 +10,10 @@ import (
 )
 
 func main() {
-	for {
-		time.Sleep(2 * time.Second)
-		depend.PrintNumber()
-		doUpdate("https://github.com/pmpeters-coder/hello.git")
+	time.Sleep(2 * time.Second)
+	depend.PrintNumber()
+	doUpdate("https://github.com/pmpeters-coder/hello.git")
 
-	}
 }
 
 func doUpdate(url string) error {
@@ -28,7 +26,5 @@ func doUpdate(url string) error {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(resp.Body)
-	fmt.Println()
 	return err
 }
