@@ -3,13 +3,17 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 
 	"github.com/inconshreveable/go-update"
 )
 
 func main() {
 	for {
+		time.Sleep(2 * time.Second)
+		fmt.Println(2)
 		doUpdate("https://github.com/pmpeters-coder/hello.git")
+
 	}
 }
 
