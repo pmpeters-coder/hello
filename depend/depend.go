@@ -4,5 +4,5 @@ import "fmt"
 
 // PrintNumber returns a hard coded string.
 func PrintNumber() {
-	fmt.Println("1")
+	fmt.Println("2")
 }
